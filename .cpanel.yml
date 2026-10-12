@@ -1,0 +1,8 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/bhfcfyss/public_html
+    - /bin/cp -R index.php $DEPLOYPATH/
+    - /bin/cp -R .htaccess $DEPLOYPATH/
+    - /bin/cp -Rf script $DEPLOYPATH/
+    - /bin/cp -Rf assets $DEPLOYPATH/

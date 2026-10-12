@@ -1,4 +1,4 @@
-# Publikasi Amanah Arka Institute
+# Arka Institute — Official Landing Page
 
 Landing page native PHP dengan Tailwind CSS melalui CDN. Jalankan dari web server PHP lokal agar `index.php` dapat dirender.
 
