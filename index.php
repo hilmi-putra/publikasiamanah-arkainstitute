@@ -687,7 +687,32 @@ $faq = [
              CALL FOR PAPER (Carousel with Blurred Edges)
              ============================================== -->
         <?php
-        $cfpImages = glob('./assets/call for paper/*.{png,jpg,jpeg,webp}', GLOB_BRACE);
+        $cfpImages = [];
+        $cfpDir = __DIR__ . '/assets/call for paper';
+        if (is_dir($cfpDir)) {
+            $scanned = @scandir($cfpDir);
+            if ($scanned) {
+                foreach ($scanned as $f) {
+                    if ($f === '.' || $f === '..') continue;
+                    $ext = strtolower(pathinfo($f, PATHINFO_EXTENSION));
+                    if (in_array($ext, ['png', 'jpg', 'jpeg', 'webp'])) {
+                        $cfpImages[] = './assets/call for paper/' . $f;
+                    }
+                }
+            }
+        }
+        // Fallback explicitly to the call for paper assets (NEVER to assets/journal)
+        if (empty($cfpImages)) {
+            $cfpImages = [
+                './assets/call for paper/call for paper_cessie_v2.png',
+                './assets/call for paper/call for paper_cocreation_v2.png',
+                './assets/call for paper/call for paper_covalue.png',
+                './assets/call for paper/call for paper_educenter_v2-1.png',
+                './assets/call for paper/call for paper_educenter_v2.png',
+                './assets/call for paper/call for paper_hecatech_v2-1.png',
+                './assets/call for paper/call for paper_hecatech_v2.png',
+            ];
+        }
         ?>
         <?php if (!empty($cfpImages)): ?>
         <section id="call-for-paper" class="py-20 sm:py-28 bg-[#F8F8FA] overflow-hidden relative border-t border-neutral-200">
@@ -722,21 +747,35 @@ $faq = [
                 <!-- 3D Carousel Stage (Center-aligned Stage) -->
                 <div id="cfp-stage" class="relative w-full h-[460px] sm:h-[540px] lg:h-[620px] flex items-center justify-center">
                     <?php foreach ($cfpImages as $cfpIdx => $cfpImg): ?>
-                    <?php $cfpName = pathinfo($cfpImg, PATHINFO_FILENAME); ?>
+                    <?php 
+                    $cfpName = pathinfo($cfpImg, PATHINFO_FILENAME); 
+                    $cleanTitle = preg_replace('/^call\s*for\s*paper[_\s]*/i', '', $cfpName);
+                    $cleanTitle = preg_replace('/[_\s]v\d+.*$/i', '', $cleanTitle);
+                    $cleanTitle = trim(str_replace('_', ' ', $cleanTitle));
+                    $titleMap = [
+                        'cessie'     => 'Cessie',
+                        'cocreation' => 'Co-Creation',
+                        'covalue'    => 'Co-Value',
+                        'educenter'  => 'Educenter',
+                        'hecatech'   => 'Hexatech',
+                    ];
+                    $lower = strtolower($cleanTitle);
+                    $displayTitle = isset($titleMap[$lower]) ? $titleMap[$lower] : ucwords($cleanTitle);
+                    ?>
                     <div class="cfp-card absolute w-[280px] sm:w-[360px] lg:w-[420px] cursor-pointer select-none transition-all duration-500 ease-out will-change-transform"
                          data-cfp-index="<?= $cfpIdx ?>"
                          data-poster="<?= htmlspecialchars($cfpImg) ?>"
-                         data-title="Call For Paper — <?= htmlspecialchars(ucwords(str_replace(['call for paper_', '_v2-1', '_v2', '_'], ['', '', '', ' '], $cfpName))) ?>">
+                         data-title="Call For Paper — <?= htmlspecialchars($displayTitle) ?>">
                         <div class="relative rounded-2xl sm:rounded-3xl overflow-hidden shadow-2xl border border-neutral-200/90 group bg-white">
                             <img src="<?= htmlspecialchars($cfpImg) ?>" 
-                                 alt="Call For Paper <?= htmlspecialchars(ucwords(str_replace(['call for paper_', '_v2-1', '_v2', '_'], ['', '', '', ' '], $cfpName))) ?>" 
+                                 alt="Call For Paper <?= htmlspecialchars($displayTitle) ?>" 
                                  class="w-full aspect-[3/4] object-cover transition-transform duration-500 group-hover:scale-102"
                                  loading="lazy">
                             
                             <!-- Bottom Frosted Label -->
                             <div class="absolute bottom-0 inset-x-0 p-4 sm:p-5 bg-gradient-to-t from-black/85 via-black/40 to-transparent">
                                 <div class="text-xs sm:text-sm font-extrabold text-white tracking-tight">
-                                    <?= htmlspecialchars(ucwords(str_replace(['call for paper_', '_v2-1', '_v2', '_'], ['', '', '', ' '], $cfpName))) ?>
+                                    <?= htmlspecialchars($displayTitle) ?>
                                 </div>
                                 <div class="mt-1 text-[10px] sm:text-xs text-amber-300 font-semibold flex items-center gap-1.5">
                                     <span class="w-1.5 h-1.5 rounded-full bg-arka-yellow animate-pulse"></span>
@@ -808,7 +847,7 @@ $faq = [
                         
                         <!-- Poster Preview Container (Mobile friendly & balanced) -->
                         <div class="relative bg-[#F8F8FA] overflow-hidden border-b border-neutral-200 h-56 sm:h-60 flex items-center justify-center p-3 sm:p-4 group/poster cursor-pointer poster-preview-trigger" data-poster="<?= htmlspecialchars($jurnal['image']) ?>" data-title="<?= htmlspecialchars($jurnal['full_name']) ?>">
-                            <img src="<?= htmlspecialchars($jurnal['image']) ?>" alt="Call for Paper <?= htmlspecialchars($jurnal['name']) ?>" class="w-full h-full object-contain transition-transform duration-300 group-hover:scale-[1.02]" loading="lazy">
+                            <img src="<?= htmlspecialchars($jurnal['image']) ?>" alt="Cover Jurnal <?= htmlspecialchars($jurnal['name']) ?>" class="w-full h-full object-contain transition-transform duration-300 group-hover:scale-[1.02]" loading="lazy">
                             
                             <!-- Accreditation Badge Floating on Top Right -->
                             <div class="absolute top-3 right-3 z-10">
