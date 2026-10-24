@@ -1664,6 +1664,211 @@ $faq = [
         </div>
     </div>
 
+    <!-- Promo Discount 10% Modal Popup -->
+    <div id="promo-modal" class="fixed inset-0 z-50 hidden bg-black/60 backdrop-blur-sm flex items-center justify-center p-4 transition-opacity duration-300">
+        <div class="relative max-w-[390px] w-full bg-[#FCF8EF] rounded-[32px] p-6 sm:p-8 shadow-2xl border border-[#EDE4D0] text-center overflow-hidden animate-fade-in" onclick="event.stopPropagation()">
+            
+            <!-- Close Button (X in circle at top-right) -->
+            <button id="promo-modal-close" class="absolute top-4 right-4 z-20 w-8 h-8 rounded-full bg-neutral-400 hover:bg-neutral-600 text-white flex items-center justify-center font-bold text-sm transition-colors shadow-xs" aria-label="Tutup Promo">
+                ✕
+            </button>
+
+            <!-- Background Outline Watermark "SALE" -->
+            <div class="absolute inset-x-0 top-3 flex items-center justify-center pointer-events-none select-none opacity-20 -z-0">
+                <span class="font-black text-7xl sm:text-8xl tracking-widest text-transparent" style="-webkit-text-stroke: 1.5px #6B7280; font-family: sans-serif;">
+                    SALE
+                </span>
+            </div>
+
+            <!-- Graphic Badge with 10% Starburst & Doodle Arrows -->
+            <div class="relative w-full h-36 flex items-center justify-center z-10 select-none">
+                
+                <!-- Left Red Curly Spiral Arrow -->
+                <svg class="absolute left-4 sm:left-6 top-3 w-14 h-16 text-[#EA4335] -rotate-6" viewBox="0 0 70 80" fill="none" stroke="currentColor">
+                    <path d="M10 25 C 20 8, 38 12, 28 32 C 18 52, 42 42, 40 28 C 36 12, 60 22, 52 46 C 48 58, 56 68, 62 68" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M52 68 L64 68 L63 56" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+
+                <!-- Center Spiky Starburst Badge (10%) -->
+                <div class="relative flex items-center justify-center w-28 h-28">
+                    <svg class="w-28 h-28 text-[#0E6377] drop-shadow-md" viewBox="0 0 100 100">
+                        <polygon points="50,2 57,11 67,6 72,16 83,14 85,25 96,27 94,38 102,44 97,54 102,62 94,70 96,80 85,82 83,92 72,90 67,99 57,94 50,102 43,94 33,99 28,90 17,92 15,82 4,80 6,70 -2,62 3,54 -2,44 6,38 4,27 15,25 17,14 28,16 33,6 43,11" fill="currentColor" />
+                    </svg>
+                    <span class="absolute font-black text-2xl text-white tracking-tight drop-shadow-sm select-none">
+                        10%
+                    </span>
+                </div>
+
+                <!-- Right Green Looped Doodle Arrow -->
+                <svg class="absolute right-4 sm:right-6 top-4 w-14 h-16 text-[#5A9E6F] rotate-12" viewBox="0 0 70 80" fill="none" stroke="currentColor">
+                    <path d="M55 18 C 35 15, 20 28, 25 48 C 30 68, 50 68, 48 45 C 46 22, 24 25, 14 36" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M22 26 L12 36 L18 46" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+
+            <!-- Headline & Subheadline (Bahasa Indonesia) -->
+            <div class="relative z-10 mt-1">
+                <h3 class="text-xl sm:text-2xl font-black text-[#1A1A1A] leading-tight tracking-tight uppercase">
+                    WAH ADA PROMO NIH!!<br>
+                    <span class="text-[#0E6377]">ARKA INSTITUTE</span>
+                </h3>
+                <p class="mt-2 text-xs sm:text-sm font-extrabold text-neutral-800 leading-snug">
+                    Tunggu dulu, ada diskon untuk naskah Anda.
+                </p>
+                <p class="mt-1 text-[11px] sm:text-xs text-neutral-500 leading-relaxed max-w-[280px] mx-auto">
+                    Klaim diskon melalui WhatsApp sebelum waktunya habis.
+                </p>
+            </div>
+
+            <!-- 24-Hour Daily Countdown Timer -->
+            <div class="relative z-10 mt-4 bg-white/80 border border-[#E8DFC9] rounded-2xl p-3 shadow-inner">
+                <div class="text-[10px] font-bold uppercase tracking-wider text-neutral-500 mb-1.5">
+                    Penawaran Berakhir Hari Ini Dalam:
+                </div>
+                <div class="flex items-center justify-center gap-1.5 sm:gap-2 font-mono">
+                    
+                    <!-- Hours -->
+                    <div class="flex flex-col items-center">
+                        <div class="flex gap-1">
+                            <span id="promo-cd-h1" class="w-7 h-9 sm:w-8 sm:h-10 bg-[#0E6377] text-white font-extrabold text-lg sm:text-xl rounded-md flex items-center justify-center shadow-xs">0</span>
+                            <span id="promo-cd-h2" class="w-7 h-9 sm:w-8 sm:h-10 bg-[#0E6377] text-white font-extrabold text-lg sm:text-xl rounded-md flex items-center justify-center shadow-xs">0</span>
+                        </div>
+                        <span class="text-[9px] text-neutral-400 font-semibold uppercase mt-1">Jam</span>
+                    </div>
+
+                    <span class="text-[#0E6377] font-extrabold text-lg -mt-3.5">:</span>
+
+                    <!-- Minutes -->
+                    <div class="flex flex-col items-center">
+                        <div class="flex gap-1">
+                            <span id="promo-cd-m1" class="w-7 h-9 sm:w-8 sm:h-10 bg-[#0E6377] text-white font-extrabold text-lg sm:text-xl rounded-md flex items-center justify-center shadow-xs">0</span>
+                            <span id="promo-cd-m2" class="w-7 h-9 sm:w-8 sm:h-10 bg-[#0E6377] text-white font-extrabold text-lg sm:text-xl rounded-md flex items-center justify-center shadow-xs">0</span>
+                        </div>
+                        <span class="text-[9px] text-neutral-400 font-semibold uppercase mt-1">Menit</span>
+                    </div>
+
+                    <span class="text-[#0E6377] font-extrabold text-lg -mt-3.5">:</span>
+
+                    <!-- Seconds -->
+                    <div class="flex flex-col items-center">
+                        <div class="flex gap-1">
+                            <span id="promo-cd-s1" class="w-7 h-9 sm:w-8 sm:h-10 bg-[#0E6377] text-white font-extrabold text-lg sm:text-xl rounded-md flex items-center justify-center shadow-xs">0</span>
+                            <span id="promo-cd-s2" class="w-7 h-9 sm:w-8 sm:h-10 bg-[#0E6377] text-white font-extrabold text-lg sm:text-xl rounded-md flex items-center justify-center shadow-xs">0</span>
+                        </div>
+                        <span class="text-[9px] text-neutral-400 font-semibold uppercase mt-1">Detik</span>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- WhatsApp CTA Button (Bahasa Indonesia) -->
+            <div class="relative z-10 mt-5">
+                <a id="promo-wa-btn"
+                   href="<?= $whatsapp ?>?text=Halo%20Admin%20Arka%20Institute,%20saya%20ingin%20klaim%20Diskon%2010%25%20publikasi%20jurnal" 
+                   target="_blank" 
+                   rel="noopener" 
+                   class="w-full py-3.5 px-4 bg-[#0E6377] hover:bg-[#094756] text-white font-extrabold text-sm sm:text-base rounded-xl transition duration-200 shadow-lg hover:shadow-xl flex items-center justify-center gap-2 active:scale-95 group">
+                    <span>Klaim Diskon Sekarang</span>
+                    <svg class="w-4 h-4 transition-transform duration-200 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+                    </svg>
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Floating Re-open Promo Button (Bottom Left) -->
+    <div id="promo-floating-btn" class="fixed bottom-6 left-6 z-40 hidden">
+        <button onclick="openPromoModal()" class="flex items-center gap-2 px-3.5 py-2.5 rounded-full bg-[#0E6377] text-white text-xs font-bold shadow-lg hover:bg-[#094756] hover:scale-105 transition-all active:scale-95 border border-white/20">
+            <span class="text-sm">🎁</span>
+            <span>Diskon 10%</span>
+        </button>
+    </div>
+
+    <!-- Promo Modal & 24h Auto-Reset Countdown Script -->
+    <script>
+        (function() {
+            const modal = document.getElementById('promo-modal');
+            const closeBtn = document.getElementById('promo-modal-close');
+            const floatingBtn = document.getElementById('promo-floating-btn');
+
+            // Daily 24-Hour Countdown (counts down to 23:59:59 of current day, auto-resets at midnight for the new day)
+            function getEndOfDayTarget() {
+                const now = new Date();
+                const endOfDay = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 23, 59, 59, 999);
+                return endOfDay.getTime();
+            }
+
+            function updateCountdown() {
+                const now = Date.now();
+                let target = getEndOfDayTarget();
+                let remaining = target - now;
+
+                // When midnight is reached, recalculate target for the new day
+                if (remaining <= 0) {
+                    target = getEndOfDayTarget();
+                    remaining = Math.max(0, target - Date.now());
+                }
+
+                const totalSeconds = Math.max(0, Math.floor(remaining / 1000));
+                const h = Math.floor(totalSeconds / 3600);
+                const m = Math.floor((totalSeconds % 3600) / 60);
+                const s = totalSeconds % 60;
+
+                const pad = (n) => String(n).padStart(2, '0');
+                const hStr = pad(h);
+                const mStr = pad(m);
+                const sStr = pad(s);
+
+                const elH1 = document.getElementById('promo-cd-h1');
+                const elH2 = document.getElementById('promo-cd-h2');
+                const elM1 = document.getElementById('promo-cd-m1');
+                const elM2 = document.getElementById('promo-cd-m2');
+                const elS1 = document.getElementById('promo-cd-s1');
+                const elS2 = document.getElementById('promo-cd-s2');
+
+                if (elH1) elH1.textContent = hStr[0];
+                if (elH2) elH2.textContent = hStr[1];
+                if (elM1) elM1.textContent = mStr[0];
+                if (elM2) elM2.textContent = mStr[1];
+                if (elS1) elS1.textContent = sStr[0];
+                if (elS2) elS2.textContent = sStr[1];
+            }
+
+            // Run countdown every 1 second
+            updateCountdown();
+            setInterval(updateCountdown, 1000);
+
+            // Modal Display Behavior
+            window.openPromoModal = function() {
+                if (modal) {
+                    modal.classList.remove('hidden');
+                    modal.classList.add('flex');
+                    if (floatingBtn) floatingBtn.classList.add('hidden');
+                }
+            };
+
+            window.closePromoModal = function() {
+                if (modal) {
+                    modal.classList.add('hidden');
+                    modal.classList.remove('flex');
+                    if (floatingBtn) floatingBtn.classList.remove('hidden');
+                }
+            };
+
+            closeBtn?.addEventListener('click', closePromoModal);
+            modal?.addEventListener('click', function(e) {
+                if (e.target === modal) closePromoModal();
+            });
+
+            // Auto-open setiap kali halaman dimuat / di-refresh
+            setTimeout(() => {
+                openPromoModal();
+            }, 1500);
+        })();
+    </script>
+
     <!-- Main JS -->
     <script src="./script/main.js"></script>
 </body>
