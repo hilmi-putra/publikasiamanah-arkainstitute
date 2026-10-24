@@ -14,7 +14,7 @@ $jurnals = [
         'sinta' => 'Sinta 3',
         'scope' => 'Pengembangan Kurikulum, Teknologi Pendidikan & Pembelajaran',
         'freq' => 'Terbit 3x / Tahun',
-        'image' => './assets/call for paper/call for paper_educenter.webp',
+        'image' => './assets/journal/educenter.webp',
     ],
     [
         'name' => 'Cessie',
@@ -22,7 +22,7 @@ $jurnals = [
         'sinta' => 'Sinta 4',
         'scope' => 'Hukum Pidana, Perdata, Tata Negara & Isu Kontemporer',
         'freq' => 'Terbit 2x / Tahun',
-        'image' => './assets/call for paper/call for paper_cessie.webp',
+        'image' => './assets/journal/cessie.webp',
     ],
     [
         'name' => 'Keynesia',
@@ -30,7 +30,7 @@ $jurnals = [
         'sinta' => 'Sinta 5',
         'scope' => 'Ilmu Ekonomi, Ekonomi Pembangunan, Manajemen & Akuntansi',
         'freq' => 'Terbit 2x / Tahun',
-        'image' => './assets/call for paper/call for paper_keynesia.webp',
+        'image' => './assets/journal/keynesia.webp',
     ],
     [
         'name' => 'Hexatech',
@@ -38,7 +38,7 @@ $jurnals = [
         'sinta' => 'Sinta 5',
         'scope' => 'Teknik Sipil, Arsitektur, Elektro, Mesin, Informatika & Biomedis',
         'freq' => 'Terbit 2x / Tahun',
-        'image' => './assets/call for paper/call for paper_hexatech.webp',
+        'image' => './assets/journal/hexatech.webp',
     ],
     [
         'name' => 'Co-Creation',
@@ -46,7 +46,7 @@ $jurnals = [
         'sinta' => 'Sinta 5',
         'scope' => 'Manajemen Bisnis, Pemasaran, Keuangan & SDM',
         'freq' => 'Terbit 2x / Tahun',
-        'image' => './assets/call for paper/call for paper_cocreation.webp',
+        'image' => './assets/journal/cocreation.webp',
     ],
     [
         'name' => 'Nautical',
@@ -54,7 +54,7 @@ $jurnals = [
         'sinta' => 'ISSN',
         'scope' => 'Multidisiplin, Terapan Sains, Teknologi & Sosial Humaniora',
         'freq' => 'Terbit Berkala',
-        'image' => './assets/call for paper/call for paper_nautical.webp',
+        'image' => './assets/journal/nautical.webp',
     ],
     [
         'name' => 'Florona',
@@ -62,7 +62,7 @@ $jurnals = [
         'sinta' => 'ISSN',
         'scope' => 'Epidemiologi, Kebijakan Kesehatan, Keperawatan & Farmasi',
         'freq' => 'Terbit 2x / Tahun',
-        'image' => './assets/call for paper/call for paper_florona.webp',
+        'image' => './assets/journal/florona.webp',
     ],
     [
         'name' => 'Histeria',
@@ -70,7 +70,7 @@ $jurnals = [
         'sinta' => 'Sinta 5',
         'scope' => 'Sosial Humaniora, Kebijakan Publik, Ilmu Komunikasi & Budaya',
         'freq' => 'Terbit 2x / Tahun',
-        'image' => './assets/call for paper/call for paper_histeria.webp',
+        'image' => './assets/journal/histeria.webp',
     ],
     [
         'name' => 'Scopus / WoS',
@@ -78,7 +78,7 @@ $jurnals = [
         'sinta' => 'Internasional',
         'scope' => 'Multidisiplin Global Q1 - Q4 (Scopus / Web of Science)',
         'freq' => 'Priority Review',
-        'image' => './assets/call for paper/call for paper_scopus.webp',
+        'image' => './assets/journal/scopus.webp',
     ],
 ];
 
@@ -151,8 +151,8 @@ $faq = [
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?= htmlspecialchars($brand) ?> — Business Consulting & Scientific Publishing for Sustainable Growth</title>
-    <meta name="description" content="Arka Institute mendampingi publikasi jurnal ilmiah terakreditasi Sinta & Internasional secara profesional, transparan, dan berbadan hukum resmi.">
+    <title><?= htmlspecialchars($brand) ?> — LoA 3 Hari. Legal. Tanpa Was-was</title>
+    <meta name="description" content="2.900+ naskah sudah terbit, giliran Anda. Bayar bertahap, naskah aman, slot review terbatas. Layanan pendampingan publikasi jurnal ilmiah resmi Arka Institute.">
     <link rel="icon" type="image/png" href="./assets/favicon.png">
     <link rel="shortcut icon" href="./assets/favicon.png" type="image/png">
     <link rel="apple-touch-icon" href="./assets/favicon.png">
@@ -249,9 +249,10 @@ $faq = [
                     <span class="w-1.5 h-1.5 rounded-full bg-arka-yellow"></span>
                     <span>Home</span>
                 </a>
-                <a href="#statement" class="hover:text-arka-dark transition">About</a>
-                <a href="#layanan" class="hover:text-arka-dark transition">Capabilities</a>
+                <a href="#tentang" class="hover:text-arka-dark transition">Tentang</a>
+                <a href="#layanan" class="hover:text-arka-dark transition">Layanan</a>
                 <a href="#katalog" class="hover:text-arka-dark transition">Katalog</a>
+                <a href="#testimoni" class="hover:text-arka-dark transition">Testimoni</a>
                 <a href="#faq" class="hover:text-arka-dark transition">FAQ</a>
             </nav>
 
@@ -262,7 +263,7 @@ $faq = [
                     <span>Cari Jurnal</span>
                 </a>
                 <a href="<?= $whatsapp ?>" class="inline-flex items-center justify-center px-6 py-2.5 rounded-lg bg-arka-yellow hover:bg-arka-yellowHover text-arka-dark font-extrabold text-xs uppercase tracking-wider transition-all duration-200 shadow-sm active:scale-95">
-                    Contact Us
+                    Hubungi Kami
                 </a>
             </div>
 
@@ -278,13 +279,14 @@ $faq = [
         <div id="mobile-menu" class="hidden lg:hidden border-b border-arka-borderLight bg-white px-6 py-5">
             <div class="flex flex-col gap-4 text-sm font-bold text-neutral-700">
                 <a href="#hero" class="text-arka-dark">Home</a>
-                <a href="#statement" class="hover:text-arka-dark">About Arka Institute</a>
-                <a href="#layanan" class="hover:text-arka-dark">Capabilities & Layanan</a>
+                <a href="#tentang" class="hover:text-arka-dark">Tentang Arka Institute</a>
+                <a href="#layanan" class="hover:text-arka-dark">Layanan & Keunggulan</a>
                 <a href="#katalog" class="hover:text-arka-dark">Katalog Jurnal</a>
+                <a href="#testimoni" class="hover:text-arka-dark">Testimoni</a>
                 <a href="#faq" class="hover:text-arka-dark">FAQ</a>
                 <div class="pt-2">
                     <a href="<?= $whatsapp ?>" class="w-full inline-flex items-center justify-center py-3 rounded-lg bg-arka-yellow text-arka-dark font-extrabold text-xs uppercase tracking-wider">
-                        Contact Us (WhatsApp)
+                        Hubungi Kami (WhatsApp)
                     </a>
                 </div>
             </div>
@@ -293,134 +295,140 @@ $faq = [
 
     <main>
         <!-- ==============================================
-             HERO SECTION (Matching Reference 2 Layout Exactly)
+             HERO SECTION (2-Column: LOA Text on Left, Visual Mockup on Right)
              ============================================== -->
-        <section id="hero" class="pt-14 sm:pt-20 pb-16 bg-white overflow-hidden">
+        <section id="hero" class="pt-12 sm:pt-16 lg:pt-20 pb-16 lg:pb-24 bg-white overflow-hidden border-b border-neutral-200 relative">
             <div class="max-w-7xl mx-auto px-6 lg:px-12">
                 
-                <!-- Headline & Subtitle: Side-by-Side (Exactly as Reference 2) -->
-                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-start mb-12 sm:mb-16">
-                    <div class="lg:col-span-8 reveal">
-                        <h1 class="text-5xl sm:text-7xl lg:text-[5.25rem] font-extrabold tracking-tight text-arka-dark leading-[1.03]">
-                            Scientific Publishing<br>
-                            for Sustainable Growth.
-                        </h1>
-                    </div>
-
-                    <div class="lg:col-span-4 lg:pt-3 reveal">
-                        <p class="text-sm sm:text-base text-neutral-600 leading-relaxed font-normal">
-                            Arka Institute helps researchers and academicians refine manuscripts, strengthen peer-review readiness, and unlock measurable publication success across indexed journals.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- ==============================================
-                     WIDE HERO IMAGE BANNER WITH DITHERED PIXEL TRANSITION
-                     (Exactly matching Reference 2 horizontal banner + Reference 1 dither)
-                     ============================================== -->
-                <div class="reveal relative w-full overflow-hidden rounded-none border border-neutral-200 bg-neutral-900 shadow-sm">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
                     
-                    <!-- The Monochrome Architectural / Slats Editorial Visual -->
-                    <div class="relative w-full h-[320px] sm:h-[420px] lg:h-[460px] overflow-hidden bg-neutral-950 flex items-center justify-center">
+                    <!-- LEFT COLUMN: Headline, Subtitle & Action Buttons -->
+                    <div class="lg:col-span-6 reveal flex flex-col justify-center text-center lg:text-left items-center lg:items-start">
                         
-                        <!-- Rhythmic Vertical Architectural Slats (matching Reference 2 image) -->
-                        <div class="absolute inset-0 flex items-stretch justify-between opacity-80 pointer-events-none">
-                            <div class="w-1/2 h-full bg-gradient-to-r from-neutral-900 via-neutral-200 to-neutral-900 flex items-stretch">
-                                <!-- High contrast vertical line pattern -->
-                                <div class="w-full h-full" style="background: repeating-linear-gradient(90deg, #111 0px, #111 4px, #fff 4px, #fff 8px, #333 8px, #333 16px, #eee 16px, #eee 20px, #000 20px, #000 28px); opacity: 0.85;"></div>
-                            </div>
-                            <div class="w-1/2 h-full bg-neutral-950 relative flex items-center justify-center overflow-hidden">
-                                <!-- Halftone & geometric shadow silhouette -->
-                                <div class="absolute inset-0" style="background: repeating-linear-gradient(90deg, #0a0a0a 0px, #0a0a0a 6px, #555 6px, #555 10px, #1a1a1a 10px, #1a1a1a 24px, #888 24px, #888 26px); opacity: 0.75;"></div>
-                                <div class="absolute inset-0 bg-gradient-to-t from-neutral-950 via-transparent to-neutral-950"></div>
-                            </div>
+                        <!-- Big Headline H1 -->
+                        <h1 class="text-4xl sm:text-6xl lg:text-[4.25rem] font-extrabold tracking-tight text-arka-dark leading-[1.06]">
+                            LoA 3 Hari.<br>
+                            Legal. Tanpa Was-was
+                        </h1>
+
+                        <!-- Subtitle -->
+                        <p class="mt-5 text-base sm:text-lg text-neutral-600 leading-relaxed font-normal max-w-xl">
+                            2.900+ naskah sudah terbit, giliran Anda. Bayar bertahap, naskah aman, slot review terbatas.
+                        </p>
+
+                        <!-- Tagline Microcopy -->
+                        <div class="mt-4 font-mono text-xs sm:text-sm font-bold text-neutral-500 uppercase tracking-[0.25em]">
+                            CEPAT // LEGAL // TERPERCAYA
                         </div>
 
-                        <!-- Atmospheric overlay with editorial grain -->
-                        <div class="absolute inset-0 bg-gradient-to-b from-black/30 via-transparent to-black/80"></div>
-                        <div class="absolute inset-0 halftone-dark opacity-35"></div>
+                        <!-- Action Buttons -->
+                        <div class="mt-8 flex flex-wrap items-center justify-center lg:justify-start gap-3.5">
+                            <a href="<?= $whatsapp ?>?text=Halo%20Admin%20Arka%20Institute,%20saya%20ingin%20mengamankan%20slot%20LoA%20dan%20konsultasi%20naskah." target="_blank" rel="noopener" class="px-8 py-3.5 rounded-full bg-arka-yellow hover:bg-arka-yellowHover text-arka-dark font-extrabold text-xs sm:text-sm uppercase tracking-wider transition-all duration-200 shadow-md hover:shadow-lg active:scale-95 flex items-center gap-2">
+                                <span>Amankan Slot Saya</span>
+                                <svg class="w-4 h-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+                            </a>
+                            <a href="#katalog" class="px-7 py-3.5 rounded-full bg-white hover:bg-neutral-50 text-neutral-800 border border-neutral-300 font-bold text-xs sm:text-sm uppercase tracking-wider transition-all duration-200 shadow-sm hover:shadow active:scale-95">
+                                Lihat Katalog Jurnal ↓
+                            </a>
+                        </div>
 
-                        <!-- Center Editorial Monogram Watermark -->
-                        <div class="relative z-10 flex flex-col items-center justify-center text-center px-4">
-                            <div class="font-mono text-xs uppercase tracking-[0.3em] text-white/60 mb-2">ARKA INSTITUTE • RESEARCH HOUSE</div>
-                            <div class="text-3xl sm:text-5xl font-black text-white/90 tracking-widest uppercase">DISCOVERY // IMPACT</div>
+                        <!-- 3 Trust Micro-points below CTA -->
+                        <div class="mt-10 pt-6 border-t border-neutral-200/80 flex flex-wrap items-center justify-center lg:justify-start gap-5 sm:gap-6 text-xs text-neutral-500 font-medium">
+                            <div class="flex items-center gap-1.5">
+                                <span class="text-emerald-500 font-bold">✓</span>
+                                <span>DP di Awal, Lunas Pasca-LoA</span>
+                            </div>
+                            <div class="flex items-center gap-1.5">
+                                <span class="text-emerald-500 font-bold">✓</span>
+                                <span>Turnitin Bebas Repository</span>
+                            </div>
+                            <div class="flex items-center gap-1.5">
+                                <span class="text-emerald-500 font-bold">✓</span>
+                                <span>NIB: 1103220012668</span>
+                            </div>
                         </div>
 
                     </div>
 
-                    <!-- ==============================================
-                         THE SIGNATURE DITHERED / PIXEL CHECKERED TRANSITION
-                         (Pixel-perfect reproduction of the bottom border in Reference 2)
-                         ============================================== -->
-                    <div class="w-full bg-neutral-900 relative z-20 overflow-hidden leading-none select-none">
-                        <svg class="w-full h-12 sm:h-16 text-white" viewBox="0 0 1200 64" preserveAspectRatio="none" fill="currentColor">
-                            <!-- Stepped Mosaic Blocks bridging into the white section below -->
-                            <!-- Tier 1: Sparse upper pixels -->
-                            <rect x="0" y="0" width="24" height="24" fill="#0C0E12"/>
-                            <rect x="24" y="0" width="24" height="24" fill="#FFFFFF"/>
-                            <rect x="48" y="0" width="24" height="24" fill="#0C0E12"/>
-                            <rect x="72" y="0" width="24" height="24" fill="#FFFFFF"/>
-                            <rect x="96" y="0" width="24" height="24" fill="#0C0E12"/>
-                            <rect x="120" y="0" width="24" height="24" fill="#0C0E12"/>
-                            <rect x="144" y="0" width="24" height="24" fill="#FFFFFF"/>
-                            <rect x="168" y="0" width="24" height="24" fill="#0C0E12"/>
-                            <rect x="192" y="0" width="24" height="24" fill="#FFFFFF"/>
-                            <rect x="216" y="0" width="24" height="24" fill="#FFFFFF"/>
-                            <rect x="240" y="0" width="24" height="24" fill="#0C0E12"/>
-                            <rect x="264" y="0" width="24" height="24" fill="#FFFFFF"/>
-                            <rect x="288" y="0" width="24" height="24" fill="#0C0E12"/>
-                            <rect x="312" y="0" width="24" height="24" fill="#0C0E12"/>
-                            <rect x="336" y="0" width="24" height="24" fill="#FFFFFF"/>
-                            <rect x="360" y="0" width="24" height="24" fill="#FFFFFF"/>
-                            <rect x="384" y="0" width="24" height="24" fill="#0C0E12"/>
-                            <rect x="408" y="0" width="24" height="24" fill="#FFFFFF"/>
-                            <rect x="432" y="0" width="24" height="24" fill="#0C0E12"/>
-                            <rect x="456" y="0" width="24" height="24" fill="#FFFFFF"/>
-                            <rect x="480" y="0" width="24" height="24" fill="#0C0E12"/>
-                            <rect x="504" y="0" width="24" height="24" fill="#0C0E12"/>
-                            <rect x="528" y="0" width="24" height="24" fill="#FFFFFF"/>
-                            <rect x="552" y="0" width="24" height="24" fill="#FFFFFF"/>
-                            <rect x="576" y="0" width="24" height="24" fill="#0C0E12"/>
-                            <rect x="600" y="0" width="24" height="24" fill="#FFFFFF"/>
-                            <rect x="624" y="0" width="24" height="24" fill="#0C0E12"/>
-                            <rect x="648" y="0" width="24" height="24" fill="#FFFFFF"/>
-                            <rect x="672" y="0" width="24" height="24" fill="#0C0E12"/>
-                            <rect x="696" y="0" width="24" height="24" fill="#FFFFFF"/>
-                            <rect x="720" y="0" width="24" height="24" fill="#FFFFFF"/>
-                            <rect x="744" y="0" width="24" height="24" fill="#0C0E12"/>
-                            <rect x="768" y="0" width="24" height="24" fill="#FFFFFF"/>
-                            <rect x="792" y="0" width="24" height="24" fill="#0C0E12"/>
-                            <rect x="816" y="0" width="24" height="24" fill="#FFFFFF"/>
-                            <rect x="840" y="0" width="24" height="24" fill="#0C0E12"/>
-                            <rect x="864" y="0" width="24" height="24" fill="#FFFFFF"/>
-                            <rect x="888" y="0" width="24" height="24" fill="#0C0E12"/>
-                            <rect x="912" y="0" width="24" height="24" fill="#FFFFFF"/>
-                            <rect x="936" y="0" width="24" height="24" fill="#0C0E12"/>
-                            <rect x="960" y="0" width="24" height="24" fill="#FFFFFF"/>
-                            <rect x="984" y="0" width="24" height="24" fill="#0C0E12"/>
-                            <rect x="1008" y="0" width="24" height="24" fill="#FFFFFF"/>
-                            <rect x="1032" y="0" width="24" height="24" fill="#0C0E12"/>
-                            <rect x="1056" y="0" width="24" height="24" fill="#FFFFFF"/>
-                            <rect x="1080" y="0" width="24" height="24" fill="#FFFFFF"/>
-                            <rect x="1104" y="0" width="24" height="24" fill="#0C0E12"/>
-                            <rect x="1128" y="0" width="24" height="24" fill="#FFFFFF"/>
-                            <rect x="1152" y="0" width="24" height="24" fill="#0C0E12"/>
-                            <rect x="1176" y="0" width="24" height="24" fill="#FFFFFF"/>
+                    <!-- RIGHT COLUMN: Single Dynamic Rotating Journal Card with Floating Trust Badges -->
+                    <div class="lg:col-span-6 relative flex items-center justify-center py-6 sm:py-10 overflow-visible min-h-[440px] sm:min-h-[500px]">
+                        
+                        <!-- Ambient Soft Glow Behind Card -->
+                        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[340px] sm:w-[480px] h-[340px] sm:h-[480px] bg-gradient-to-tr from-amber-200/40 via-blue-200/30 to-purple-200/30 rounded-full blur-3xl pointer-events-none -z-10"></div>
 
-                            <!-- Tier 2 & 3: Dense white stepping -->
-                            <rect x="0" y="24" width="1200" height="40" fill="#FFFFFF"/>
-                            <!-- Inverted dark cutouts into the white base for authentic checkered transition -->
-                            <rect x="48" y="24" width="24" height="16" fill="#0C0E12"/>
-                            <rect x="144" y="24" width="24" height="16" fill="#0C0E12"/>
-                            <rect x="240" y="24" width="24" height="16" fill="#0C0E12"/>
-                            <rect x="360" y="24" width="24" height="16" fill="#0C0E12"/>
-                            <rect x="480" y="24" width="24" height="16" fill="#0C0E12"/>
-                            <rect x="600" y="24" width="24" height="16" fill="#0C0E12"/>
-                            <rect x="720" y="24" width="24" height="16" fill="#0C0E12"/>
-                            <rect x="840" y="24" width="24" height="16" fill="#0C0E12"/>
-                            <rect x="960" y="24" width="24" height="16" fill="#0C0E12"/>
-                            <rect x="1080" y="24" width="24" height="16" fill="#0C0E12"/>
-                        </svg>
+                        <!-- 1. Floating Badge "3 Hari" (Top Left) -->
+                        <div class="absolute -top-3 sm:top-2 left-2 sm:left-6 lg:left-6 z-30 flex items-center gap-2 sm:gap-2.5 px-3.5 sm:px-4 py-1.5 sm:py-2 rounded-full bg-white shadow-[0_12px_25px_-5px_rgba(0,0,0,0.12)] border border-neutral-100 select-none animate-bounce" style="animation-duration: 4.5s;">
+                            <span class="w-6 h-6 sm:w-7 sm:h-7 rounded-full bg-[#FF8A00] text-white flex items-center justify-center shrink-0 shadow-sm">
+                                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                                    <circle cx="12" cy="12" r="9"/>
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 7v5l3 2"/>
+                                </svg>
+                            </span>
+                            <span class="text-xs sm:text-sm font-extrabold text-[#0B1E48] tracking-tight whitespace-nowrap">3 Hari</span>
+                        </div>
+
+                        <!-- 2. Floating Badge "Legal" (Top Right) -->
+                        <div class="absolute -top-3 sm:top-2 right-2 sm:right-6 lg:right-6 z-30 flex items-center gap-2 sm:gap-2.5 px-3.5 sm:px-4 py-1.5 sm:py-2 rounded-full bg-white shadow-[0_12px_25px_-5px_rgba(0,0,0,0.12)] border border-neutral-100 select-none animate-bounce" style="animation-duration: 5s;">
+                            <span class="w-6 h-6 sm:w-7 sm:h-7 rounded-full bg-[#00BA63] text-white flex items-center justify-center shrink-0 shadow-sm">
+                                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/>
+                                </svg>
+                            </span>
+                            <span class="text-xs sm:text-sm font-extrabold text-[#0B1E48] tracking-tight whitespace-nowrap">Legal</span>
+                        </div>
+
+                        <!-- 3. Floating Badge "LoA Terbit" (Bottom Right) -->
+                        <div class="absolute -bottom-4 sm:bottom-1 right-2 sm:right-6 lg:right-4 z-30 w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-[#FFB82E] shadow-[0_12px_25px_-5px_rgba(255,184,46,0.6)] border-2 border-white flex flex-col items-center justify-center text-center p-1 select-none animate-bounce" style="animation-duration: 6s;">
+                            <span class="text-base sm:text-xl font-black text-[#0B1E48] leading-none tracking-tight">LoA</span>
+                            <span class="text-[10px] sm:text-xs font-black text-[#0B1E48] leading-tight mt-0.5 tracking-tight">Terbit</span>
+                        </div>
+
+                        <!-- SINGLE DYNAMIC ROTATING JOURNAL CARD CONTAINER -->
+                        <div id="hero-journal-slider" class="relative w-[280px] sm:w-[320px] lg:w-[350px] h-[400px] sm:h-[450px] lg:h-[480px] rounded-[30px] overflow-hidden shadow-[0_25px_60px_-15px_rgba(0,0,0,0.25)] border-4 border-white bg-white group select-none">
+                            
+                            <!-- SLIDES (All Journals in ./assets/journal) -->
+                            <?php foreach ($jurnals as $idx => $jurnal): ?>
+                            <div class="hero-slide absolute inset-0 transition-opacity duration-700 ease-in-out cursor-pointer poster-preview-trigger <?= $idx === 0 ? 'opacity-100 z-10' : 'opacity-0 z-0 pointer-events-none' ?>" 
+                                 data-slide-index="<?= $idx ?>"
+                                 data-poster="<?= htmlspecialchars($jurnal['image']) ?>" 
+                                 data-title="<?= htmlspecialchars($jurnal['full_name']) ?>">
+                                
+                                <img src="<?= htmlspecialchars($jurnal['image']) ?>" alt="<?= htmlspecialchars($jurnal['name']) ?>" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+
+                                <!-- Top Left Pill: Journal Name -->
+                                <div class="absolute top-3.5 left-3.5 px-3 py-1 rounded-full bg-black/75 backdrop-blur-md text-white text-xs font-mono font-bold shadow-md">
+                                    <span><?= htmlspecialchars($jurnal['name']) ?></span>
+                                </div>
+
+                                <!-- Top Right Pill: Indexation (Sinta / Scopus / ISSN) -->
+                                <div class="absolute top-3.5 right-3.5 px-3 py-1 rounded-full bg-white text-neutral-900 text-[10px] font-mono font-black uppercase shadow-md">
+                                    <?= htmlspecialchars($jurnal['sinta']) ?>
+                                </div>
+
+                                <!-- Bottom Frosted Overlay Card -->
+                                <div class="absolute bottom-3.5 inset-x-3.5 p-3.5 sm:p-4 rounded-[20px] bg-black/70 backdrop-blur-md text-white border border-white/10 shadow-xl">
+                                    <div class="flex items-center justify-between">
+                                        <div class="text-xs sm:text-sm font-extrabold tracking-tight truncate pr-2">
+                                            <?= htmlspecialchars($jurnal['full_name']) ?>
+                                        </div>
+                                        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping shrink-0"></span>
+                                    </div>
+                                    <div class="mt-1 text-[11px] text-neutral-300 truncate">
+                                        <?= htmlspecialchars($jurnal['scope']) ?>
+                                    </div>
+                                </div>
+                            </div>
+                            <?php endforeach; ?>
+
+                            <!-- Top Slider Progress Dots -->
+                            <div class="absolute top-4 inset-x-0 z-20 flex justify-center gap-1.5 pointer-events-none">
+                                <?php foreach ($jurnals as $idx => $jurnal): ?>
+                                <span class="hero-dot w-2 h-1 rounded-full transition-all duration-300 <?= $idx === 0 ? 'bg-arka-yellow w-5' : 'bg-white/60' ?>"></span>
+                                <?php endforeach; ?>
+                            </div>
+
+                        </div>
+
                     </div>
 
                 </div>
@@ -429,30 +437,161 @@ $faq = [
         </section>
 
         <!-- ==============================================
-             STATEMENT SECTION (Matching Reference 2 Layout Exactly)
+             TENTANG ARKA INSTITUTE (Matching Reference 2 Layout & Copywriting)
              ============================================== -->
-        <section id="statement" class="pt-6 pb-16 bg-white">
+        <section id="tentang" class="py-16 sm:py-20 lg:py-24 bg-white border-b border-neutral-200">
+            <span id="statement" class="sr-only"></span>
             <div class="max-w-7xl mx-auto px-6 lg:px-12">
                 
-                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-start">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
                     
-                    <!-- Left: Large Bold Statement Headline (Exactly as Reference 2) -->
-                    <div class="lg:col-span-8 reveal">
-                        <h2 class="text-3xl sm:text-4xl lg:text-[2.75rem] font-extrabold text-arka-dark leading-tight tracking-tight">
-                            Founded with the mission to bring clarity to complex academic publishing challenges, Arka Institute has guided researchers across disciplines to achieve lasting success.
+                    <!-- LEFT COLUMN: Copywriting & Service Checklist (Reference 2 Layout) -->
+                    <div class="lg:col-span-7 reveal">
+                        
+                        <h2 class="text-3xl sm:text-4xl lg:text-[2.65rem] font-extrabold text-arka-dark leading-tight tracking-tight">
+                            Tentang Arka Institute
                         </h2>
+
+                        <p class="mt-5 text-base sm:text-lg text-neutral-600 leading-relaxed font-normal">
+                            <strong class="font-bold text-arka-dark">Arka Institute</strong> adalah lembaga resmi di bawah naungan <strong class="font-bold text-arka-dark">PT. Arka Mega Nusantara</strong>, yang berbadan hukum dan terdaftar resmi di kementerian. Kami siap melayani publikasi jurnal ilmiah meliputi :
+                        </p>
+
+                        <!-- Checklist with Circular Checkmarks (Matching Reference 2) -->
+                        <div class="mt-6 space-y-3.5">
+                            <div class="flex items-start sm:items-center gap-3">
+                                <span class="w-5 h-5 rounded-full border border-blue-600 text-blue-600 flex items-center justify-center shrink-0 mt-0.5 sm:mt-0">
+                                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                                </span>
+                                <span class="text-sm sm:text-base font-semibold text-neutral-800">Publikasi Jurnal Nasional (ber-ISSN)</span>
+                            </div>
+
+                            <div class="flex items-start sm:items-center gap-3">
+                                <span class="w-5 h-5 rounded-full border border-blue-600 text-blue-600 flex items-center justify-center shrink-0 mt-0.5 sm:mt-0">
+                                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                                </span>
+                                <span class="text-sm sm:text-base font-semibold text-neutral-800">Publikasi Jurnal Nasional Terakreditasi (SINTA)</span>
+                            </div>
+
+                            <div class="flex items-start sm:items-center gap-3">
+                                <span class="w-5 h-5 rounded-full border border-blue-600 text-blue-600 flex items-center justify-center shrink-0 mt-0.5 sm:mt-0">
+                                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                                </span>
+                                <span class="text-sm sm:text-base font-semibold text-neutral-800">Publikasi Jurnal Internasional Non-Bereputasi (Copernicus, EBSCO, DOAJ)</span>
+                            </div>
+
+                            <div class="flex items-start sm:items-center gap-3">
+                                <span class="w-5 h-5 rounded-full border border-blue-600 text-blue-600 flex items-center justify-center shrink-0 mt-0.5 sm:mt-0">
+                                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                                </span>
+                                <span class="text-sm sm:text-base font-semibold text-neutral-800">Publikasi Jurnal Internasional Bereputasi (Scopus, WoS)</span>
+                            </div>
+                        </div>
+
+                        <p class="mt-6 text-sm sm:text-base text-neutral-600 leading-relaxed font-normal">
+                            Dengan dukungan lebih dari <strong class="font-bold text-arka-dark">2.900 penulis</strong> dari seluruh dunia, Arka Institute hadir sebagai pionir dalam pengembangan publikasi ilmiah nasional dan internasional.
+                        </p>
+
+                        <!-- CTA Button (Matching Reference 2 Style) -->
+                        <div class="mt-8">
+                            <a href="<?= $whatsapp ?>?text=Halo%20Admin%20Arka%20Institute,%20saya%20ingin%20konsultasi%20mengenai%20layanan%20publikasi%20jurnal." target="_blank" rel="noopener" class="inline-flex items-center gap-2.5 px-8 py-3.5 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-bold text-sm tracking-wide shadow-md hover:shadow-lg transition-all active:scale-95">
+                                <span>Konsultasi Sekarang</span>
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+                            </a>
+                        </div>
+
                     </div>
 
-                    <!-- Right: Subtext + Button (Exactly as Reference 2) -->
-                    <div class="lg:col-span-4 reveal flex flex-col justify-between pt-2">
-                        <p class="text-sm text-neutral-600 leading-relaxed font-normal">
-                            Our editorial consultants combine deep expertise with practical strategies, ensuring that every recommendation leads to tangible publication outcomes.
-                        </p>
-                        
-                        <div class="mt-6">
-                            <a href="<?= $whatsapp ?>" class="inline-flex items-center justify-center px-7 py-3 rounded-lg bg-arka-yellow hover:bg-arka-yellowHover text-arka-dark font-extrabold text-xs uppercase tracking-wider transition-all duration-200 shadow-sm active:scale-95">
-                                See Our Capabilities
-                            </a>
+                    <!-- RIGHT COLUMN: Photorealistic Official Corporate Identity Cards Mockup (Matching Reference 2 Image) -->
+                    <div class="lg:col-span-5 reveal">
+                        <div class="relative rounded-[28px] overflow-hidden shadow-2xl border border-neutral-200/90 bg-[#D5CEC2] p-6 sm:p-10 flex items-center justify-center min-h-[380px] sm:min-h-[440px] select-none group">
+                            
+                            <!-- Wood Plank Texture (Light Oak Desk Surface) -->
+                            <svg class="absolute inset-0 w-full h-full object-cover opacity-70 mix-blend-multiply pointer-events-none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 400 300">
+                                <defs>
+                                    <linearGradient id="wood1" x1="0%" y1="0%" x2="100%" y2="0%">
+                                        <stop offset="0%" stop-color="#F5F2EB"/>
+                                        <stop offset="25%" stop-color="#E8E2D2"/>
+                                        <stop offset="50%" stop-color="#F2EDE2"/>
+                                        <stop offset="75%" stop-color="#E2DAC6"/>
+                                        <stop offset="100%" stop-color="#EDE6D7"/>
+                                    </linearGradient>
+                                    <pattern id="planks" width="400" height="75" patternUnits="userSpaceOnUse">
+                                        <rect width="400" height="73" fill="url(#wood1)"/>
+                                        <line x1="0" y1="74" x2="400" y2="74" stroke="#BFB59E" stroke-width="1.5"/>
+                                        <path d="M0,16 Q200,12 400,18 M0,38 Q180,42 400,36 M0,56 Q220,52 400,58" stroke="#CEC4AA" stroke-width="0.75" fill="none" opacity="0.45"/>
+                                    </pattern>
+                                </defs>
+                                <rect width="400" height="300" fill="url(#planks)"/>
+                            </svg>
+                            <div class="absolute inset-0 bg-gradient-to-tr from-black/20 via-transparent to-white/30 pointer-events-none"></div>
+
+                            <!-- CARD 1 (Back / Top: Navy Blue Corporate NPWP Tax Card) -->
+                            <div class="absolute w-[270px] sm:w-[310px] h-[170px] sm:h-[190px] rounded-[16px] bg-gradient-to-br from-[#0B1E48] via-[#081738] to-[#040C1E] text-white p-4 sm:p-5 shadow-2xl border border-white/20 -rotate-[14deg] -translate-x-6 sm:-translate-x-8 -translate-y-6 sm:-translate-y-8 transition-transform duration-300 group-hover:-rotate-[17deg]">
+                                <div class="flex items-center justify-between text-[8px] sm:text-[9px] font-mono text-neutral-300">
+                                    <span class="tracking-widest">www.pajak.go.id</span>
+                                    <span class="font-bold uppercase tracking-wider text-amber-300">Kemenkeu RI</span>
+                                </div>
+                                <div class="mt-3 flex items-center gap-2">
+                                    <div class="w-8 h-8 rounded-full bg-amber-400/20 border border-amber-300 flex items-center justify-center font-black text-amber-300 text-xs shadow-inner">
+                                        NPWP
+                                    </div>
+                                    <div>
+                                        <div class="text-[9px] font-mono uppercase tracking-widest text-neutral-300">Wajib Pajak Badan</div>
+                                        <div class="text-xs sm:text-sm font-extrabold tracking-tight font-mono text-white">61.251.294.7-423.000</div>
+                                    </div>
+                                </div>
+                                <div class="mt-4 pt-2.5 border-t border-white/15">
+                                    <div class="text-[10px] sm:text-[11px] font-black uppercase tracking-wider text-amber-300 truncate">
+                                        PT. ARKA MEGA NUSANTARA
+                                    </div>
+                                    <div class="text-[8px] text-neutral-300 truncate mt-0.5 font-mono">
+                                        KPP PRATAMA BANDUNG • JAWA BARAT
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- CARD 2 (Front / Bottom: Official Gold & White NIB Legal License Card) -->
+                            <div class="relative z-10 w-[285px] sm:w-[325px] h-[178px] sm:h-[198px] rounded-[16px] bg-white text-neutral-900 shadow-[0_25px_50px_-10px_rgba(0,0,0,0.5)] border border-neutral-200 overflow-hidden rotate-[5deg] translate-x-4 sm:translate-x-6 translate-y-4 sm:translate-y-6 transition-transform duration-300 group-hover:rotate-[2deg]">
+                                
+                                <!-- Top Gold Gradient Header Bar -->
+                                <div class="bg-gradient-to-r from-[#FFB82E] via-[#F5B301] to-[#E0A300] px-4 py-2 flex items-center justify-between text-arka-dark border-b border-amber-500/20">
+                                    <div class="flex items-center gap-1.5">
+                                        <span class="w-3.5 h-3.5 rounded-full bg-arka-dark text-arka-yellow flex items-center justify-center text-[9px] font-black">✓</span>
+                                        <span class="text-[9px] sm:text-[10px] font-mono font-black uppercase tracking-wider">OSS BKPM • NIB RESMI</span>
+                                    </div>
+                                    <span class="text-[8px] font-mono font-bold text-neutral-800">REPUBLIK INDONESIA</span>
+                                </div>
+
+                                <!-- Body: Large Bold NIB Number & Company Details -->
+                                <div class="p-4 sm:p-4.5 flex flex-col justify-between h-[calc(100%-35px)]">
+                                    <div>
+                                        <div class="text-[8px] sm:text-[9px] font-mono font-bold text-neutral-400 uppercase tracking-widest">
+                                            NOMOR INDUK BERUSAHA (NIB)
+                                        </div>
+                                        <div class="text-base sm:text-lg font-black tracking-tight text-arka-dark font-mono mt-0.5">
+                                            <?= htmlspecialchars($nib) ?>
+                                        </div>
+                                        <div class="mt-1 text-xs sm:text-[13px] font-extrabold text-neutral-900 tracking-tight">
+                                            PT. ARKA MEGA NUSANTARA
+                                        </div>
+                                    </div>
+
+                                    <!-- Bottom Row: Address, QR Code & Seal Badge -->
+                                    <div class="pt-2 border-t border-neutral-100 flex items-center justify-between gap-2">
+                                        <div class="text-[7.5px] sm:text-[8px] text-neutral-500 leading-tight truncate font-sans">
+                                            Gedung Graha Pos Indonesia Lt. 3, Bandung<br>
+                                            <span class="text-emerald-600 font-bold">Terdaftar Resmi Kemenkumham RI</span>
+                                        </div>
+                                        <div class="w-8 h-8 rounded bg-neutral-900 p-0.5 shrink-0 flex items-center justify-center shadow-xs">
+                                            <!-- Mini QR Code Representation -->
+                                            <svg class="w-full h-full text-white fill-current" viewBox="0 0 24 24">
+                                                <path d="M2 2h8v8H2V2zm2 2v4h4V4H4zm10-2h8v8h-8V2zm2 2v4h4V4h-4zM2 14h8v8H2v-8zm2 2v4h4v-4H4zm14-2h4v2h-4v-2zm-4 0h2v4h-2v-4zm2 4h4v4h-4v-4zm2-2h2v2h-2v-2z"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
 
@@ -490,7 +629,7 @@ $faq = [
                 
                 <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-6 pb-12 border-b border-neutral-200">
                     <div class="reveal">
-                        <div class="font-mono text-xs text-neutral-500 uppercase tracking-widest font-semibold mb-2">OUR CAPABILITIES</div>
+                        <div class="font-mono text-xs text-neutral-500 uppercase tracking-widest font-semibold mb-2">LAYANAN KAMI</div>
                         <h2 class="text-3xl sm:text-5xl font-extrabold text-arka-dark tracking-tight">
                             Layanan Terarah,<br>
                             Standar Editorial Presisi.
@@ -543,6 +682,100 @@ $faq = [
 
             </div>
         </section>
+
+        <!-- ==============================================
+             CALL FOR PAPER (Carousel with Blurred Edges)
+             ============================================== -->
+        <?php
+        $cfpImages = glob('./assets/call for paper/*.{png,jpg,jpeg,webp}', GLOB_BRACE);
+        ?>
+        <?php if (!empty($cfpImages)): ?>
+        <section id="call-for-paper" class="py-20 sm:py-28 bg-[#F8F8FA] overflow-hidden relative border-t border-neutral-200">
+            
+            <!-- Ambient Background Glow -->
+            <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[400px] bg-gradient-to-b from-arka-yellow/15 via-amber-200/10 to-transparent rounded-full blur-3xl pointer-events-none"></div>
+            
+            <div class="max-w-7xl mx-auto px-6 lg:px-12 relative z-10">
+                
+                <!-- Section Header -->
+                <div class="text-center mb-14 reveal">
+                    <div class="font-mono text-xs text-amber-600 uppercase tracking-widest font-semibold mb-3">OPEN SUBMISSION</div>
+                    <h2 class="text-3xl sm:text-5xl font-extrabold text-arka-dark tracking-tight">
+                        Call For Paper
+                    </h2>
+                    <p class="mt-4 text-base text-neutral-500 max-w-xl mx-auto leading-relaxed">
+                        Kirimkan naskah terbaik Anda. Slot terbatas untuk setiap edisi terbitan jurnal kami.
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- Full-Width Carousel Container with Blurred Edges -->
+            <div class="relative reveal overflow-hidden py-4">
+                
+                <!-- Left Blur Gradient Mask -->
+                <div class="absolute left-0 top-0 bottom-0 w-24 sm:w-48 lg:w-72 bg-gradient-to-r from-[#F8F8FA] via-[#F8F8FA]/90 to-transparent z-20 pointer-events-none"></div>
+                
+                <!-- Right Blur Gradient Mask -->
+                <div class="absolute right-0 top-0 bottom-0 w-24 sm:w-48 lg:w-72 bg-gradient-to-l from-[#F8F8FA] via-[#F8F8FA]/90 to-transparent z-20 pointer-events-none"></div>
+
+                <!-- 3D Carousel Stage (Center-aligned Stage) -->
+                <div id="cfp-stage" class="relative w-full h-[460px] sm:h-[540px] lg:h-[620px] flex items-center justify-center">
+                    <?php foreach ($cfpImages as $cfpIdx => $cfpImg): ?>
+                    <?php $cfpName = pathinfo($cfpImg, PATHINFO_FILENAME); ?>
+                    <div class="cfp-card absolute w-[280px] sm:w-[360px] lg:w-[420px] cursor-pointer select-none transition-all duration-500 ease-out will-change-transform"
+                         data-cfp-index="<?= $cfpIdx ?>"
+                         data-poster="<?= htmlspecialchars($cfpImg) ?>"
+                         data-title="Call For Paper — <?= htmlspecialchars(ucwords(str_replace(['call for paper_', '_v2-1', '_v2', '_'], ['', '', '', ' '], $cfpName))) ?>">
+                        <div class="relative rounded-2xl sm:rounded-3xl overflow-hidden shadow-2xl border border-neutral-200/90 group bg-white">
+                            <img src="<?= htmlspecialchars($cfpImg) ?>" 
+                                 alt="Call For Paper <?= htmlspecialchars(ucwords(str_replace(['call for paper_', '_v2-1', '_v2', '_'], ['', '', '', ' '], $cfpName))) ?>" 
+                                 class="w-full aspect-[3/4] object-cover transition-transform duration-500 group-hover:scale-102"
+                                 loading="lazy">
+                            
+                            <!-- Bottom Frosted Label -->
+                            <div class="absolute bottom-0 inset-x-0 p-4 sm:p-5 bg-gradient-to-t from-black/85 via-black/40 to-transparent">
+                                <div class="text-xs sm:text-sm font-extrabold text-white tracking-tight">
+                                    <?= htmlspecialchars(ucwords(str_replace(['call for paper_', '_v2-1', '_v2', '_'], ['', '', '', ' '], $cfpName))) ?>
+                                </div>
+                                <div class="mt-1 text-[10px] sm:text-xs text-amber-300 font-semibold flex items-center gap-1.5">
+                                    <span class="w-1.5 h-1.5 rounded-full bg-arka-yellow animate-pulse"></span>
+                                    Open Submission • Slot Terbatas
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <?php endforeach; ?>
+                </div>
+
+                <!-- Carousel Navigation Dots -->
+                <div class="flex justify-center gap-2 mt-6 sm:mt-8 relative z-30">
+                    <?php foreach ($cfpImages as $cfpIdx => $cfpImg): ?>
+                    <button class="cfp-dot w-2.5 h-2.5 rounded-full transition-all duration-300 <?= $cfpIdx === 0 ? 'bg-arka-yellow w-8' : 'bg-neutral-300 hover:bg-neutral-400' ?>" 
+                            data-cfp-dot="<?= $cfpIdx ?>" 
+                            aria-label="Go to slide <?= $cfpIdx + 1 ?>"></button>
+                    <?php endforeach; ?>
+                </div>
+
+                <!-- Carousel Arrow Buttons -->
+                <button id="cfp-prev" class="absolute left-3 sm:left-8 lg:left-14 top-1/2 -translate-y-1/2 z-30 w-11 h-11 sm:w-13 sm:h-13 rounded-full bg-white/90 hover:bg-white backdrop-blur-md border border-neutral-200 text-arka-dark flex items-center justify-center transition-all duration-200 active:scale-90 shadow-lg hover:shadow-xl hover:border-amber-400" aria-label="Previous">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M15 19l-7-7 7-7"/></svg>
+                </button>
+                <button id="cfp-next" class="absolute right-3 sm:right-8 lg:right-14 top-1/2 -translate-y-1/2 z-30 w-11 h-11 sm:w-13 sm:h-13 rounded-full bg-white/90 hover:bg-white backdrop-blur-md border border-neutral-200 text-arka-dark flex items-center justify-center transition-all duration-200 active:scale-90 shadow-lg hover:shadow-xl hover:border-amber-400" aria-label="Next">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"/></svg>
+                </button>
+            </div>
+
+            <!-- CTA Below Carousel -->
+            <div class="text-center mt-12 relative z-10 reveal">
+                <a href="<?= $whatsapp ?>?text=Halo%20Admin%20Arka%20Institute,%20saya%20tertarik%20submit%20naskah%20untuk%20Call%20For%20Paper." target="_blank" rel="noopener" class="inline-flex items-center gap-2.5 px-8 py-3.5 rounded-full bg-arka-yellow hover:bg-arka-yellowHover text-arka-dark font-extrabold text-xs sm:text-sm uppercase tracking-wider transition-all duration-200 shadow-lg hover:shadow-xl active:scale-95">
+                    <span>Submit Naskah Sekarang</span>
+                    <svg class="w-4 h-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+                </a>
+            </div>
+            
+        </section>
+        <?php endif; ?>
 
         <!-- ==============================================
              KATALOG JURNAL (Card Design with Filters)
@@ -631,60 +864,626 @@ $faq = [
         </section>
 
         <!-- ==============================================
-             ALUR PUBLIKASI (Workflow Section)
+             ALUR PUBLIKASI JURNAL NASIONAL (11-Step Flow)
              ============================================== -->
-        <section id="alur" class="py-20 sm:py-28 bg-[#F4F4F6] border-t border-neutral-200">
-            <div class="max-w-7xl mx-auto px-6 lg:px-12">
+        <style>
+            .alur-grid-row {
+                display: flex;
+                flex-direction: column;
+                gap: 12px;
+            }
+            @media (min-width: 768px) {
+                .alur-grid-row {
+                    display: grid;
+                    grid-template-columns: 1fr 48px 1fr 48px 1fr;
+                    gap: 0;
+                    align-items: center;
+                }
+            }
+            .alur-card-box {
+                background: #FFFFFF;
+                border: 1.5px solid #E5E7EB;
+                border-radius: 18px;
+                padding: 18px 20px;
+                display: flex;
+                align-items: center;
+                gap: 14px;
+                transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+                box-shadow: 0 2px 8px -2px rgba(0, 0, 0, 0.04);
+                min-height: 110px;
+                position: relative;
+            }
+            .alur-card-box:hover {
+                border-color: #F5B301;
+                transform: translateY(-3px);
+                box-shadow: 0 12px 28px -6px rgba(245, 179, 1, 0.18), 0 4px 12px -2px rgba(0, 0, 0, 0.04);
+            }
+            .alur-num-badge {
+                width: 42px;
+                height: 42px;
+                border-radius: 50%;
+                background: #FFFFFF;
+                border: 2px solid #F5B301;
+                color: #0C0E12;
+                font-weight: 900;
+                font-size: 17px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-shrink: 0;
+                box-shadow: 0 2px 6px rgba(245, 179, 1, 0.2);
+            }
+            .alur-icon-badge {
+                width: 42px;
+                height: 42px;
+                border-radius: 12px;
+                background: linear-gradient(135deg, #F5B301 0%, #E0A300 100%);
+                color: #0C0E12;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-shrink: 0;
+                box-shadow: 0 3px 8px rgba(245, 179, 1, 0.25);
+            }
+            .alur-curved-connector {
+                display: none;
+                position: absolute;
+                pointer-events: none;
+                z-index: 20;
+            }
+            @media (min-width: 768px) {
+                .alur-curved-connector {
+                    display: block;
+                }
+            }
+        </style>
+
+        <section id="alur" class="py-20 sm:py-28 bg-[#F8F9FA] border-t border-neutral-200 overflow-hidden">
+            <div class="max-w-6xl mx-auto px-6 lg:px-8">
                 
-                <div class="max-w-2xl reveal">
-                    <div class="font-mono text-xs text-neutral-500 uppercase tracking-widest font-semibold mb-2">EDITORIAL WORKFLOW</div>
-                    <h2 class="text-3xl sm:text-5xl font-extrabold text-arka-dark tracking-tight">
-                        Dari Draft Mentah<br>
-                        Hingga Terbit Resmi.
+                <div class="text-center mb-16 sm:mb-20 reveal">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-100/70 border border-amber-300 text-amber-900 text-xs font-bold uppercase tracking-wider mb-4">
+                        <span class="w-2 h-2 rounded-full bg-arka-yellow animate-pulse"></span>
+                        Transparan & Terstruktur
+                    </div>
+                    <h2 class="text-3xl sm:text-5xl font-extrabold tracking-tight text-arka-dark">
+                        Alur Publikasi <span class="text-arka-yellow">Jurnal Nasional</span>
                     </h2>
-                    <p class="mt-4 text-base text-neutral-600 leading-relaxed">
-                        Proses transparan di setiap fase, dengan pelaporan berkala hingga nomor DOI aktif terindeks.
+                    <p class="mt-4 text-sm sm:text-base text-neutral-500 max-w-2xl mx-auto leading-relaxed">
+                        Proses transparan dan terukur dari pengiriman naskah awal hingga terbit resmi ber-DOI dan e-sertifikat.
                     </p>
                 </div>
 
-                <div class="mt-16 grid grid-cols-1 md:grid-cols-4 gap-0 border-t border-b border-neutral-300">
-                    <?php
-                    $steps = [
-                        ['01', 'Kirim Naskah', 'Kirimkan draf naskah awal via WhatsApp atau email resmi kami.'],
-                        ['02', 'Review 1x24 Jam', 'Pemeriksaan scope, format template jurnal, dan uji Turnitin similarity.'],
-                        ['03', 'Editorial & LoA', 'Perapihan sitasi Mendeley, proofreading, dan penerbitan LoA resmi.'],
-                        ['04', 'Publish & DOI', 'Artikel terbit pada volume terkait dengan nomor DOI aktif terverifikasi.']
-                    ];
-                    foreach ($steps as $index => $step):
+                <?php
+                $alurSteps = [
+                    1 => [
+                        'num' => '1',
+                        'title' => 'Artikel Masuk',
+                        'desc' => 'Penulis mengirimkan artikel melalui WA admin/email. Artikel akan tercatat dan diverifikasi kelengkapannya.',
+                        'icon' => '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>'
+                    ],
+                    2 => [
+                        'num' => '2',
+                        'title' => 'Screening & Cek',
+                        'desc' => 'Tim melakukan pengecekan awal terkait kesesuaian fokus, ruang lingkup, dan kelengkapan naskah.',
+                        'icon' => '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>'
+                    ],
+                    3 => [
+                        'num' => '3',
+                        'title' => 'Editing Template',
+                        'desc' => 'Artikel disesuaikan dengan template jurnal (format, sitasi Mendeley, struktur) untuk standardisasi.',
+                        'icon' => '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"/>'
+                    ],
+                    4 => [
+                        'num' => '4',
+                        'title' => 'Cek Plagiasi',
+                        'desc' => 'Artikel dicek oleh Turnitin resmi 100% No Repository untuk memastikan orisinalitas karya.',
+                        'icon' => '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>'
+                    ],
+                    5 => [
+                        'num' => '5',
+                        'title' => 'Submit Artikel',
+                        'desc' => 'Artikel yang lolos pengecekan dikirim langsung ke editor dan reviewer untuk penelaahan ilmiah.',
+                        'icon' => '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/>'
+                    ],
+                    6 => [
+                        'num' => '6',
+                        'title' => 'Review Artikel',
+                        'desc' => 'Reviewer independen menilai artikel secara keseluruhan sesuai kaidah standar IMRAD.',
+                        'icon' => '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"/>'
+                    ],
+                    7 => [
+                        'num' => '7',
+                        'title' => 'Revisi Artikel',
+                        'desc' => 'Tim khusus mendampingi proses revisi berdasarkan catatan dan saran perbaikan dari reviewer.',
+                        'icon' => '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>'
+                    ],
+                    8 => [
+                        'num' => '8',
+                        'title' => 'Letter Accepted (LoA)',
+                        'desc' => 'Setelah dinyatakan layak terbit, penulis menerima Letter of Acceptance resmi dari dewan redaksi jurnal.',
+                        'icon' => '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/>'
+                    ],
+                    9 => [
+                        'num' => '9',
+                        'title' => 'Review Akhir & Proofreading',
+                        'desc' => 'Pemeriksaan mendalam dan proofreading akhir tata bahasa untuk kesempurnaan naskah sebelum publish.',
+                        'icon' => '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/>'
+                    ],
+                    10 => [
+                        'num' => '10',
+                        'title' => 'Revisi Akhir / Fiksasi',
+                        'desc' => 'Admin mengirimkan naskah fiksasi final kepada penulis untuk konfirmasi sebelum terbit di sistem.',
+                        'icon' => '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>'
+                    ],
+                    11 => [
+                        'num' => '11',
+                        'title' => 'Terbit & E-Sertifikat',
+                        'desc' => 'Artikel terbit resmi pada volume & nomor aktif dengan DOI terindeks, dan e-sertifikat penulis dikirimkan.',
+                        'icon' => '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/>'
+                    ]
+                ];
+
+                function renderAlurCard($step) {
                     ?>
-                    <div class="reveal p-8 sm:p-10 border-b md:border-b-0 <?= $index < 3 ? 'md:border-r border-neutral-300' : '' ?> bg-white flex flex-col justify-between">
-                        <div>
-                            <div class="font-mono text-xl sm:text-2xl font-extrabold text-arka-yellow mb-6"><?= $step[0] ?></div>
-                            <h3 class="text-xl font-bold text-arka-dark mb-3"><?= $step[1] ?></h3>
-                            <p class="text-sm text-neutral-600 leading-relaxed"><?= $step[2] ?></p>
+                    <div class="alur-card-box">
+                        <div class="alur-num-badge"><?= $step['num'] ?></div>
+                        <div class="alur-icon-badge">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <?= $step['icon'] ?>
+                            </svg>
                         </div>
-                        <div class="mt-8 pt-4 font-mono text-[11px] text-neutral-400 uppercase tracking-widest">
-                            Phase <?= $step[0] ?> of 04
+                        <div class="flex-1 min-w-0 pr-1">
+                            <h4 class="text-xs sm:text-[13px] font-black text-arka-dark uppercase tracking-wider mb-1 line-clamp-1">
+                                <?= htmlspecialchars($step['title']) ?>
+                            </h4>
+                            <p class="text-[11px] sm:text-xs text-neutral-500 leading-relaxed line-clamp-3">
+                                <?= htmlspecialchars($step['desc']) ?>
+                            </p>
                         </div>
                     </div>
-                    <?php endforeach; ?>
-                </div>
+                    <?php
+                }
 
-                <div class="mt-10 p-6 bg-white border border-neutral-200 flex flex-col sm:flex-row items-center justify-between gap-4">
-                    <p class="text-sm font-bold text-arka-dark">Butuh SOP lengkap penulisan & format naskah?</p>
-                    <a href="https://drive.google.com/file/d/1kgn5yUm0kFHEiOru5heE1hWG8ImtDG1F/view?usp=sharing" target="_blank" rel="noopener" class="px-5 py-2.5 bg-arka-dark hover:bg-neutral-800 text-white font-extrabold text-xs uppercase tracking-wider transition">
-                        Download SOP PDF ↗
-                    </a>
+                function renderMobileDownArrow() {
+                    ?>
+                    <div class="flex md:hidden justify-center py-1">
+                        <svg class="w-6 h-7" viewBox="0 0 24 28" fill="none">
+                            <line x1="12" y1="2" x2="12" y2="18" stroke="#F5B301" stroke-width="2.5" stroke-dasharray="4 3" stroke-linecap="round"/>
+                            <polygon points="6,17 12,26 18,17" fill="#F5B301"/>
+                        </svg>
+                    </div>
+                    <?php
+                }
+                ?>
+
+                <div class="space-y-8 sm:space-y-10">
+                    
+                    <!-- ==========================================
+                         ROW 1: Step 1 -> Step 2 -> Step 3
+                         ========================================== -->
+                    <div class="alur-grid-row reveal relative">
+                        <!-- Step 1 -->
+                        <div>
+                            <?php renderAlurCard($alurSteps[1]); ?>
+                        </div>
+
+                        <!-- Arrow 1 -> 2 (Desktop) -->
+                        <div class="hidden md:flex items-center justify-center">
+                            <svg class="w-12 h-6" viewBox="0 0 48 24" fill="none">
+                                <line x1="2" y1="12" x2="36" y2="12" stroke="#F5B301" stroke-width="2.5" stroke-dasharray="5 4" stroke-linecap="round"/>
+                                <polygon points="34,6 46,12 34,18" fill="#F5B301"/>
+                            </svg>
+                        </div>
+                        <?php renderMobileDownArrow(); ?>
+
+                        <!-- Step 2 -->
+                        <div>
+                            <?php renderAlurCard($alurSteps[2]); ?>
+                        </div>
+
+                        <!-- Arrow 2 -> 3 (Desktop) -->
+                        <div class="hidden md:flex items-center justify-center">
+                            <svg class="w-12 h-6" viewBox="0 0 48 24" fill="none">
+                                <line x1="2" y1="12" x2="36" y2="12" stroke="#F5B301" stroke-width="2.5" stroke-dasharray="5 4" stroke-linecap="round"/>
+                                <polygon points="34,6 46,12 34,18" fill="#F5B301"/>
+                            </svg>
+                        </div>
+                        <?php renderMobileDownArrow(); ?>
+
+                        <!-- Step 3 (Has curved connector on right side down to Step 4) -->
+                        <div class="relative">
+                            <?php renderAlurCard($alurSteps[3]); ?>
+
+                            <!-- Curved Loop Down: Step 3 -> Step 4 (Desktop) -->
+                            <div class="alur-curved-connector -right-12 top-1/2 w-12 h-[calc(100%+40px)]">
+                                <svg class="w-full h-full" viewBox="0 0 48 150" fill="none" preserveAspectRatio="none">
+                                    <path d="M 0,16 C 42,16 42,134 8,134" stroke="#F5B301" stroke-width="2.5" stroke-dasharray="6 4" fill="none"/>
+                                    <polygon points="14,128 0,134 14,140" fill="#F5B301"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <?php renderMobileDownArrow(); ?>
+                    </div>
+
+
+                    <!-- ==========================================
+                         ROW 2: Step 6 <- Step 5 <- Step 4
+                         On desktop: [Step 6] <-- [Step 5] <-- [Step 4]
+                         On mobile:  Step 4 -> Step 5 -> Step 6
+                         ========================================== -->
+                    <div class="alur-grid-row reveal relative">
+                        <!-- Step 6 (Desktop Col 1, Mobile 3rd) -->
+                        <div class="order-3 md:order-1 relative">
+                            <?php renderAlurCard($alurSteps[6]); ?>
+
+                            <!-- Curved Loop Down: Step 6 -> Step 7 (Desktop) -->
+                            <div class="alur-curved-connector -left-12 top-1/2 w-12 h-[calc(100%+40px)]">
+                                <svg class="w-full h-full" viewBox="0 0 48 150" fill="none" preserveAspectRatio="none">
+                                    <path d="M 48,16 C 6,16 6,134 40,134" stroke="#F5B301" stroke-width="2.5" stroke-dasharray="6 4" fill="none"/>
+                                    <polygon points="34,128 48,134 34,140" fill="#F5B301"/>
+                                </svg>
+                            </div>
+                        </div>
+
+                        <!-- Arrow 5 <- 6 (Desktop: Left Arrow between 6 and 5) -->
+                        <div class="order-3 md:order-2 hidden md:flex items-center justify-center">
+                            <svg class="w-12 h-6" viewBox="0 0 48 24" fill="none">
+                                <line x1="46" y1="12" x2="12" y2="12" stroke="#F5B301" stroke-width="2.5" stroke-dasharray="5 4" stroke-linecap="round"/>
+                                <polygon points="14,6 2,12 14,18" fill="#F5B301"/>
+                            </svg>
+                        </div>
+
+                        <!-- Step 5 (Desktop Col 3, Mobile 2nd) -->
+                        <div class="order-2 md:order-3">
+                            <?php renderAlurCard($alurSteps[5]); ?>
+                            <?php renderMobileDownArrow(); ?>
+                        </div>
+
+                        <!-- Arrow 4 <- 5 (Desktop: Left Arrow between 5 and 4) -->
+                        <div class="order-2 md:order-4 hidden md:flex items-center justify-center">
+                            <svg class="w-12 h-6" viewBox="0 0 48 24" fill="none">
+                                <line x1="46" y1="12" x2="12" y2="12" stroke="#F5B301" stroke-width="2.5" stroke-dasharray="5 4" stroke-linecap="round"/>
+                                <polygon points="14,6 2,12 14,18" fill="#F5B301"/>
+                            </svg>
+                        </div>
+
+                        <!-- Step 4 (Desktop Col 5, Mobile 1st) -->
+                        <div class="order-1 md:order-5">
+                            <?php renderAlurCard($alurSteps[4]); ?>
+                            <?php renderMobileDownArrow(); ?>
+                        </div>
+
+                        <div class="order-4 md:hidden">
+                            <?php renderMobileDownArrow(); ?>
+                        </div>
+                    </div>
+
+
+                    <!-- ==========================================
+                         ROW 3: Step 7 -> Step 8 -> Step 9
+                         ========================================== -->
+                    <div class="alur-grid-row reveal relative">
+                        <!-- Step 7 -->
+                        <div>
+                            <?php renderAlurCard($alurSteps[7]); ?>
+                        </div>
+
+                        <!-- Arrow 7 -> 8 (Desktop) -->
+                        <div class="hidden md:flex items-center justify-center">
+                            <svg class="w-12 h-6" viewBox="0 0 48 24" fill="none">
+                                <line x1="2" y1="12" x2="36" y2="12" stroke="#F5B301" stroke-width="2.5" stroke-dasharray="5 4" stroke-linecap="round"/>
+                                <polygon points="34,6 46,12 34,18" fill="#F5B301"/>
+                            </svg>
+                        </div>
+                        <?php renderMobileDownArrow(); ?>
+
+                        <!-- Step 8 -->
+                        <div>
+                            <?php renderAlurCard($alurSteps[8]); ?>
+                        </div>
+
+                        <!-- Arrow 8 -> 9 (Desktop) -->
+                        <div class="hidden md:flex items-center justify-center">
+                            <svg class="w-12 h-6" viewBox="0 0 48 24" fill="none">
+                                <line x1="2" y1="12" x2="36" y2="12" stroke="#F5B301" stroke-width="2.5" stroke-dasharray="5 4" stroke-linecap="round"/>
+                                <polygon points="34,6 46,12 34,18" fill="#F5B301"/>
+                            </svg>
+                        </div>
+                        <?php renderMobileDownArrow(); ?>
+
+                        <!-- Step 9 (Has curved connector on right side down to Step 10) -->
+                        <div class="relative">
+                            <?php renderAlurCard($alurSteps[9]); ?>
+
+                            <!-- Curved Loop Down: Step 9 -> Step 10 (Desktop) -->
+                            <div class="alur-curved-connector -right-12 top-1/2 w-12 h-[calc(100%+40px)]">
+                                <svg class="w-full h-full" viewBox="0 0 48 150" fill="none" preserveAspectRatio="none">
+                                    <path d="M 0,16 C 42,16 42,134 8,134" stroke="#F5B301" stroke-width="2.5" stroke-dasharray="6 4" fill="none"/>
+                                    <polygon points="14,128 0,134 14,140" fill="#F5B301"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <?php renderMobileDownArrow(); ?>
+                    </div>
+
+
+                    <!-- ==========================================
+                         ROW 4: [Empty] [Empty] Step 11 <- Step 10
+                         On desktop: [Empty] | [Empty] | [Step 11] <-- [Step 10]
+                         On mobile:  Step 10 -> Step 11
+                         ========================================== -->
+                    <div class="alur-grid-row reveal relative">
+                        <!-- Desktop Spacer: Col 1 Empty -->
+                        <div class="hidden md:block"></div>
+                        <!-- Desktop Spacer: Col 2 Empty -->
+                        <div class="hidden md:block"></div>
+
+                        <!-- Step 11 (Desktop Col 3, Mobile 2nd) -->
+                        <div class="order-2 md:order-3">
+                            <?php renderAlurCard($alurSteps[11]); ?>
+                        </div>
+
+                        <!-- Arrow 10 <- 11 (Desktop: Left Arrow from 10 to 11) -->
+                        <div class="hidden md:flex order-2 md:order-4 items-center justify-center">
+                            <svg class="w-12 h-6" viewBox="0 0 48 24" fill="none">
+                                <line x1="46" y1="12" x2="12" y2="12" stroke="#F5B301" stroke-width="2.5" stroke-dasharray="5 4" stroke-linecap="round"/>
+                                <polygon points="14,6 2,12 14,18" fill="#F5B301"/>
+                            </svg>
+                        </div>
+
+                        <!-- Step 10 (Desktop Col 5, Mobile 1st) -->
+                        <div class="order-1 md:order-5">
+                            <?php renderAlurCard($alurSteps[10]); ?>
+                            <?php renderMobileDownArrow(); ?>
+                        </div>
+                    </div>
+
                 </div>
 
             </div>
         </section>
 
 
-
         <!-- ==============================================
-             FAQ SECTION
+             TESTIMONIAL SECTION (Explore Stories)
              ============================================== -->
+        <style>
+            .testi-scrollbar-hide::-webkit-scrollbar {
+                display: none;
+            }
+            .testi-scrollbar-hide {
+                -ms-overflow-style: none;
+                scrollbar-width: none;
+            }
+        </style>
+        <section id="testimoni" class="py-20 sm:py-28 bg-white border-t border-neutral-200 overflow-hidden">
+            <div class="max-w-7xl mx-auto px-6 lg:px-12">
+                
+                <!-- Section Header -->
+                <div class="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-10 reveal">
+                    <div class="flex flex-wrap items-center gap-3.5">
+                        <span class="px-4 py-1.5 rounded-full border border-neutral-300 text-xs font-bold uppercase tracking-wider text-neutral-700 bg-white shadow-xs">
+                            Testimoni
+                        </span>
+                        <h2 class="text-2xl sm:text-4xl font-extrabold tracking-tight text-arka-dark">
+                            Bukti Kepuasan Klien
+                        </h2>
+                    </div>
+
+                    <div class="flex items-center gap-3">
+                        <a href="<?= $whatsapp ?>" target="_blank" rel="noopener" class="inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-arka-dark text-white text-xs font-bold hover:bg-neutral-800 transition-all shadow-sm group">
+                            <span>Konsultasi Publikasi</span>
+                            <span class="text-arka-yellow group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform">↗</span>
+                        </a>
+                    </div>
+                </div>
+
+                <?php
+                $testimonials = [
+                    [
+                        'img' => 'assets/testi/testi ai.png',
+                        'pill' => 'LoA Terbit',
+                        'tag' => 'Fast Track',
+                        'title' => 'LoA Resmi Terbit Cepat & Sesuai Target Deadline'
+                    ],
+                    [
+                        'img' => 'assets/testi/testi ai-1.png',
+                        'pill' => 'SINTA 2',
+                        'tag' => 'Pendampingan',
+                        'title' => 'Pendampingan Intensif Hingga Naskah Diterima'
+                    ],
+                    [
+                        'img' => 'assets/testi/testi ai-2.png',
+                        'pill' => 'Turnitin ORI',
+                        'tag' => 'No Repository',
+                        'title' => 'Turnitin Resmi 100% Aman & Bebas Plagiasi'
+                    ],
+                    [
+                        'img' => 'assets/testi/testi ai-3.png',
+                        'pill' => 'Reviewer IMRAD',
+                        'tag' => 'Kualitas Teruji',
+                        'title' => 'Reviewer Sangat Teliti dan Komunikatif'
+                    ],
+                    [
+                        'img' => 'assets/testi/testi ai-4.png',
+                        'pill' => 'Syarat Lulus',
+                        'tag' => 'Pascasarjana',
+                        'title' => 'Sangat Membantu Memenuhi Syarat Kelulusan'
+                    ],
+                    [
+                        'img' => 'assets/testi/testi ai-5.png',
+                        'pill' => 'Garansi Terbit',
+                        'tag' => 'Amanah 100%',
+                        'title' => 'Layanan Transparan, Ramah, dan Sangat Terpercaya'
+                    ],
+                    [
+                        'img' => 'assets/testi/testi ai-6.png',
+                        'pill' => 'Jurnal Nasional',
+                        'tag' => 'Terakreditasi',
+                        'title' => 'Naskah Terbit Tepat Waktu Tanpa Kendala'
+                    ],
+                    [
+                        'img' => 'assets/testi/testi ai-7.png',
+                        'pill' => 'Scopus / WoS',
+                        'tag' => 'Bereputasi',
+                        'title' => 'Pendampingan Standar Jurnal Internasional'
+                    ],
+                    [
+                        'img' => 'assets/testi/testi ai-8.png',
+                        'pill' => 'E-Sertifikat',
+                        'tag' => 'Bukti Resmi',
+                        'title' => 'DOI Langsung Aktif Beserta E-Sertifikat Lengkap'
+                    ],
+                    [
+                        'img' => 'assets/testi/testi ai-9.png',
+                        'pill' => 'Slot Terbatas',
+                        'tag' => 'Fast Response',
+                        'title' => 'Admin Responsif 24 Jam Memberi Solusi Cepat'
+                    ],
+                    [
+                        'img' => 'assets/testi/testi ai-10.png',
+                        'pill' => 'Biaya Transparan',
+                        'tag' => 'Terjangkau',
+                        'title' => 'Sistem Pembayaran Bertahap dan Sangat Jelas'
+                    ],
+                    [
+                        'img' => 'assets/testi/testi ai-11.png',
+                        'pill' => 'Rekomendasi Dosen',
+                        'tag' => 'Mitra Kampus',
+                        'title' => 'Pilihan Utama Dosen dan Peneliti se-Indonesia'
+                    ]
+                ];
+                ?>
+
+                <!-- Testimonials Track / Carousel -->
+                <div id="testi-track" class="flex gap-5 sm:gap-6 overflow-x-auto testi-scrollbar-hide scroll-smooth snap-x snap-mandatory py-4 px-1 reveal">
+                    <?php foreach ($testimonials as $idx => $item): ?>
+                    <div class="testi-card-item shrink-0 w-[270px] sm:w-[320px] md:w-[340px] aspect-[4/5] rounded-[28px] overflow-hidden relative group cursor-pointer shadow-md hover:shadow-2xl transition-all duration-300 bg-neutral-900 border border-neutral-200/80 snap-start select-none"
+                         onclick="openTestiModal('<?= htmlspecialchars($item['img']) ?>', '<?= htmlspecialchars($item['title']) ?>')">
+                        
+                        <!-- Poster Image -->
+                        <img src="<?= htmlspecialchars($item['img']) ?>" 
+                             alt="<?= htmlspecialchars($item['title']) ?>" 
+                             class="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105"
+                             loading="lazy">
+
+                        <!-- Dark Gradient Overlay -->
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-black/30 pointer-events-none"></div>
+
+                        <!-- Top Right Pill Badge (like reference design) -->
+                        <div class="absolute top-4 right-4 z-10">
+                            <span class="inline-flex items-center px-3.5 py-1 rounded-full bg-white/20 backdrop-blur-md border border-white/30 text-white text-[11px] font-bold tracking-wide shadow-xs">
+                                <?= htmlspecialchars($item['pill']) ?>
+                            </span>
+                        </div>
+
+                        <!-- Bottom Glassmorphism Overlay Box (like reference design) -->
+                        <div class="absolute bottom-4 left-4 right-4 p-4 rounded-2xl bg-white/15 backdrop-blur-xl border border-white/25 text-white transition-all duration-300 group-hover:bg-white/25 group-hover:border-white/40 shadow-lg z-10">
+                            <div class="flex items-end justify-between gap-3">
+                                <div class="flex-1 min-w-0">
+                                    <span class="inline-block px-2.5 py-0.5 rounded-full bg-arka-yellow text-arka-dark text-[10px] font-black uppercase tracking-wider mb-1.5 shadow-xs">
+                                        <?= htmlspecialchars($item['tag']) ?>
+                                    </span>
+                                    <p class="text-xs sm:text-sm font-bold text-white leading-snug line-clamp-2">
+                                        <?= htmlspecialchars($item['title']) ?>
+                                    </p>
+                                </div>
+                                <div class="w-9 h-9 rounded-full bg-white text-arka-dark flex items-center justify-center font-black text-sm shrink-0 shadow-md group-hover:bg-arka-yellow group-hover:scale-110 transition-all">
+                                    ↗
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <?php endforeach; ?>
+                </div>
+
+                <!-- Bottom Navigation & Description (matching reference footer) -->
+                <div class="flex flex-col sm:flex-row items-center justify-between gap-6 mt-8 sm:mt-10 reveal">
+                    <!-- Left: Arrow Buttons -->
+                    <div class="flex items-center gap-3">
+                        <button id="testi-prev" aria-label="Previous Testimonial" class="w-12 h-12 rounded-full border border-neutral-300 bg-white text-arka-dark hover:bg-arka-dark hover:text-white hover:border-arka-dark transition-all flex items-center justify-center font-bold text-lg shadow-xs active:scale-95">
+                            ←
+                        </button>
+                        <button id="testi-next" aria-label="Next Testimonial" class="w-12 h-12 rounded-full border border-neutral-300 bg-white text-arka-dark hover:bg-arka-dark hover:text-white hover:border-arka-dark transition-all flex items-center justify-center font-bold text-lg shadow-xs active:scale-95">
+                            →
+                        </button>
+                    </div>
+
+                    <!-- Right: Supporting Text -->
+                    <p class="text-xs sm:text-sm text-neutral-500 max-w-md text-center sm:text-right leading-relaxed">
+                        Bergabung bersama lebih dari 2.900+ dosen, peneliti, dan akademisi yang telah sukses mempublikasikan karya ilmiah mereka bersama Arka Institute.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Testimonial Lightbox Modal -->
+        <div id="testi-modal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm hidden items-center justify-center p-4 transition-opacity duration-300" onclick="closeTestiModal(event)">
+            <div class="relative max-w-md w-full bg-neutral-900 rounded-3xl overflow-hidden shadow-2xl border border-neutral-700" onclick="event.stopPropagation()">
+                <button onclick="closeTestiModal()" class="absolute top-4 right-4 z-20 w-9 h-9 rounded-full bg-black/60 text-white hover:bg-black flex items-center justify-center font-bold text-sm transition-colors">
+                    ✕
+                </button>
+                <div class="max-h-[80vh] overflow-y-auto">
+                    <img id="testi-modal-img" src="" alt="Testimoni Client Arka Institute" class="w-full h-auto object-contain">
+                </div>
+                <div class="p-4 bg-neutral-900 border-t border-neutral-800 flex items-center justify-between gap-3">
+                    <span id="testi-modal-title" class="text-xs text-neutral-300 font-medium line-clamp-1"></span>
+                    <a href="<?= $whatsapp ?>" target="_blank" rel="noopener" class="px-4 py-2 rounded-full bg-arka-yellow text-arka-dark text-xs font-black hover:bg-arka-yellowHover transition-colors shrink-0">
+                        Chat Admin WA ↗
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            // Slider Controls
+            (function() {
+                const track = document.getElementById('testi-track');
+                const prevBtn = document.getElementById('testi-prev');
+                const nextBtn = document.getElementById('testi-next');
+
+                if (track && prevBtn && nextBtn) {
+                    prevBtn.addEventListener('click', () => {
+                        const cardWidth = track.querySelector('.testi-card-item')?.offsetWidth || 340;
+                        track.scrollBy({ left: -(cardWidth + 20) * 1.5, behavior: 'smooth' });
+                    });
+                    nextBtn.addEventListener('click', () => {
+                        const cardWidth = track.querySelector('.testi-card-item')?.offsetWidth || 340;
+                        track.scrollBy({ left: (cardWidth + 20) * 1.5, behavior: 'smooth' });
+                    });
+                }
+            })();
+
+            // Lightbox Modal functions
+            function openTestiModal(imgSrc, title) {
+                const modal = document.getElementById('testi-modal');
+                const modalImg = document.getElementById('testi-modal-img');
+                const modalTitle = document.getElementById('testi-modal-title');
+                if (modal && modalImg) {
+                    modalImg.src = imgSrc;
+                    if (modalTitle) modalTitle.textContent = title;
+                    modal.classList.remove('hidden');
+                    modal.classList.add('flex');
+                    document.body.style.overflow = 'hidden';
+                }
+            }
+
+            function closeTestiModal() {
+                const modal = document.getElementById('testi-modal');
+                if (modal) {
+                    modal.classList.add('hidden');
+                    modal.classList.remove('flex');
+                    document.body.style.overflow = '';
+                }
+            }
+
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape') closeTestiModal();
+            });
+        </script>
         <section id="faq" class="py-20 sm:py-28 bg-[#F8F8FA] border-t border-neutral-200">
             <div class="max-w-7xl mx-auto px-6 lg:px-12">
                 <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
@@ -733,7 +1532,7 @@ $faq = [
             <div class="max-w-7xl mx-auto px-6 lg:px-12">
                 <div class="p-10 sm:p-16 bg-neutral-900 text-white flex flex-col lg:flex-row lg:items-center justify-between gap-8">
                     <div>
-                        <div class="font-mono text-xs uppercase tracking-widest text-arka-yellow mb-2">READY FOR PUBLICATION</div>
+                        <div class="font-mono text-xs uppercase tracking-widest text-arka-yellow mb-2">SIAP PUBLIKASI</div>
                         <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight">Naskah Anda pantas terbit di jurnal bereputasi.</h2>
                         <p class="text-sm text-neutral-400 mt-2">Dapatkan review kesesuaian scope dan cek Turnitin gratis dalam 1x24 jam.</p>
                     </div>
